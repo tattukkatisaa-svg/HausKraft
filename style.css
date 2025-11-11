@@ -30,7 +30,7 @@ section.py{padding:80px 0}
 .gallery figure{position:relative;overflow:hidden;border-radius:var(--radius)}
 .gallery img{width:100%;height:260px;object-fit:cover;transition:.3s}
 .gallery figure:hover img{transform:scale(1.05)}
-.gallery figcaption{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.55);color:#fff;padding:8px 12px;font-size:.9rem}
+.gallery figcaption{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.55);color:#fff;padding:8px 12px;font-size:.9rem}
 .quotes blockquote{max-width:700px;margin:30px auto 0;font-style:italic}
 .quotes cite{display:block;text-align:right;margin-top:10px;font-style:normal;font-weight:600}
 .check{list-style:none;margin-top:20px}
@@ -44,8 +44,12 @@ textarea{min-height:140px;resize:vertical}
 .translate{position:fixed;bottom:20px;right:20px;z-index:999}
 
 /* --- header --- */
-.top{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:100}
-.logo{font-weight:700;font-size:1.4rem;color:var(--primary)}
+.top{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0,.06);position:sticky;top:0;z-index:100}
+.logo img {HausKraft
+/Messenger_creation_A1E7A37B-5357-410B-B029-033CAA84096E.jpeg
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
 #mainNav ul{display:flex;gap:30px;list-style:none}
 #mainNav a{font-weight:600;color:var(--dark);padding:6px 0;border-bottom:2px solid transparent;transition:.25s}
 #mainNav a:hover,#mainNav a:focus{border-color:var(--primary)}
@@ -74,8 +78,4 @@ footer a{margin-left:15px}
   #navToggle{display:flex}
   #mainNav.open{max-height:400px}
   .hero h1{font-size:2rem}
-            }
-.logo img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto;
 }
