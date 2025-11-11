@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Bauunternehmen Müller | Hochwertige Bau- & Renovierungsarbeiten</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ihr zuverlässiger Partner für Treppenbau, Pool & Garten, Badezimmer, Decken & Böden sowie Innen- und Außenrenovierungen in ganz Bayern.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER / NAV -->
+  <header class="top">
+    <div class="container flex sb">
+      <a class="logo" href="#home">Bau&nbsp;Müller</a>
+
+      <button id="navToggle" aria-label="Navigation öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav">
+        <ul>
+          <li><a href="#home">Start</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#projekte">Projekte</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero__text">
+      <h1>Hochwertige Bau- & Renovierungsarbeiten aus einer Hand</h1>
+      <p>Von der Treppe bis zum Garten – wir machen Ihre Immobilie besser.</p>
+      <a class="btn" href="#kontakt">Kostenloses Angebot anfragen</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py">
+    <div class="container grid2">
+      <div>
+        <h2>Über uns</h2>
+        <p>
+          Seit über 15 Jahren steht <strong>Bauunternehmen Müller</strong> für solides Handwerk, Termintreue und faire Preise.
+          Geschäftsführer Max Müller lernte das Handwerk von der Pike auf und leitet heute ein kleines, eingespieltes Team.
+        </p>
+        <p>Egal ob Privatkunde, Architekt oder Immobilienfirma – Qualität und Vertrauen sind das Fundament unserer Arbeit.</p>
+        <ul class="check">
+          <li>15+ Jahre Erfahrung</li>
+          <li>Meisterbetrieb zertifiziert</li>
+          <li>5-Jahres-Garantie auf ausgewählte Leistungen</li>
+        </ul>
+      </div>
+      <figure>
+        <img src="img/about.jpg" alt="Max Müller im Bau">
+      </figure>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="leistungen" class="py bg-light">
+    <div class="container">
+      <h2>Unsere Leistungen</h2>
+      <div class="service-grid">
+        <article>
+          <img src="img/icon-stairs.svg" alt="">
+          <h3>Treppenbau</h3>
+          <p>Individuelle Innen- & Außentreppen aus Holz, Stahl oder Beton – inkl. Absturzsicherung.</p>
+        </article>
+
+        <article>
+          <img src="img/icon-pool.svg" alt="">
+          <h3>Pools & Gartenanlagen</h3>
+          <p>Schwimmteiche, Swimmingpools, Pflaster- & Terrassenarbeiten – ganzjährig nutzbar.</p>
+        </article>
+
+        <article>
+          <img src="img/icon-garden.svg" alt="">
+          <h3>Gartenbau & Gestaltung</h3>
+          <p>Von der Planung bis zur Bepflanzung: Ihr Garten wird zur grünen Oase.</p>
+        </article>
+
+        <article>
+          <img src="img/icon-floor.svg" alt="">
+          <h3>Decken & Böden</h3>
+          <p>Estrich, Dämmung, Trockenbau, Parkett- & Fliesenverlegung – alles aus einer Hand.</p>
+        </article>
+
+        <article>
+          <img src="img/icon-bath.svg" alt="">
+          <h3>Badezimmer & Sanierungen</h3>
+          <p>Barrierefreie Duschen, energiesparende Sanierung, komplette Badplanung.</p>
+        </article>
+
+        <article>
+          <img src="img/icon-more.svg" alt="">
+          <h3>Weitere Innen- & Außenarbeiten</h3>
+          <p>Fassadendämmung, Balkonsanierung, Trockenbau, Maler- und Lackierarbeiten.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projekte" class="py">
+    <div class="container">
+      <h2>Projekte & Referenzen</h2>
+      <p class="center">Ein kleiner Auswahl unserer zuletzt abgeschlossenen Bauprojekte.</p>
+
+      <!-- Filter buttons (optional) -->
+      <div class="filter">
+        <button data-filter="all" class="active">Alle</button>
+        <button data-filter="treppen">Treppen</button>
+        <button data-filter="pool">Pools</button>
+        <button data-filter="bad">Bäder</button>
+      </div>
+
+      <!-- Gallery -->
+      <div class="gallery" id="gallery">
+        <figure class="treppen">
+          <a href="img/proj1-full.jpg" data-lightbox="proj">
+            <img src="img/proj1-thumb.jpg" alt="Holztreppe mit LED-Stufen">
+            <figcaption>Holztreppe mit LED-Stufen, München</figcaption>
+          </a>
+        </figure>
+
+        <figure class="pool">
+          <a href="img/proj2-full.jpg" data-lightbox="proj">
+            <img src="img/proj2-thumb.jpg" alt="Naturpool im Garten">
+            <figcaption>Naturpool mit Holzterrasse, Starnberg</figcaption>
+          </a>
+        </figure>
+
+        <figure class="bad">
+          <a href="img/proj3-full.jpg" data-lightbox="proj">
+            <img src="img/proj3-thumb.jpg" alt="Moderne Badrenovierung">
+            <figcaption>Bad-Sanierung in Bestandsimmobilie</figcaption>
+          </a>
+        </figure>
+
+        <!-- add more figures here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py bg-light">
+    <div class="container quotes">
+      <h2>Das sagen unsere Kunden</h2>
+      <blockquote>
+        <p>„Pünktlich, sauber und extrem präzise – so stelle ich mir einen Meisterbetrieb vor.“</p>
+        <cite>— Familie Schwarz, Grünwald</cite>
+      </blockquote>
+      <blockquote>
+        <p>„Die Treppe ist ein echter Hingucker. Vielen Dank für die kreative Lösung!“</p>
+        <cite>— Daniela &amp; Thomas H., Gauting</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="kontakt" class="py">
+    <div class="container grid2">
+      <div>
+        <h2>Kontakt & Anfahrt</h2>
+        <p>Rufen Sie uns an oder schreiben Sie per WhatsApp – wir melden uns binnen 24 h.</p>
+
+        <ul class="contact-list">
+          <li><strong>Telefon:</strong> <a href="tel:+4989123456789">+49 89 123 456 789</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/4915112345678" target="_blank">+49 151 123 456 78</a></li>
+          <li><strong>E-Mail:</strong> <a href="mailto:info@bau-mueller.de">info@bau-mueller.de</a></li>
+          <li><strong>Adresse:</strong> Gewerbegebiet 1, 82515 Wolfratshausen</li>
+        </ul>
+
+        <p>Mo–Fr 07:00–17:00 Uhr | Sa nach Vereinbarung</p>
+      </div>
+
+      <form action="https://formsubmit.co/info@bau-mueller.de" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Neue Anfrage über Webseite">
+        <label>Name *<br><input type="text" name="name" required></label>
+        <label>E-Mail *<br><input type="email" name="email" required></label>
+        <label>Telefon<br><input type="tel" name="phone"></label>
+        <label>Ihre Nachricht *<br><textarea name="message" required></textarea></label>
+        <button class="btn" type="submit">Angebot anfragen</button>
+      </form>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10651.661037668018!2d11.4336!3d48.0105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDAwJzM3LjgiTiAxMcKwMjYnMDEuMCJF!5e0!3m2!1sde!2sde!4v1670000000000" width="100%" height="320" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark">
+    <div class="container flex sb">
+      <p>&copy; 2024 Bauunternehmen Müller | Alle Rechte vorbehalten</p>
+      <nav>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Google Translate Trigger (optional) -->
+  <div id="google_translate_element" class="translate"></div>
+
+  <!-- SCRIPTS -->
+  <script src="main.js"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+      </html>
