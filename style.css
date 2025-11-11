@@ -75,3 +75,7 @@ footer a{margin-left:15px}
   #mainNav.open{max-height:400px}
   .hero h1{font-size:2rem}
             }
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
